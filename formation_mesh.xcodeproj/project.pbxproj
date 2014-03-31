@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1887C42618E9934000697EAB /* UIView+ZXQuartz.m in Sources */ = {isa = PBXBuildFile; fileRef = 1887C42518E9934000697EAB /* UIView+ZXQuartz.m */; };
 		18F56BF718E556E600EA7A0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F56BF618E556E600EA7A0A /* Foundation.framework */; };
 		18F56BF918E556E600EA7A0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F56BF818E556E600EA7A0A /* CoreGraphics.framework */; };
 		18F56BFB18E556E600EA7A0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F56BFA18E556E600EA7A0A /* UIKit.framework */; };
@@ -21,6 +22,18 @@
 		18F56C1818E556E700EA7A0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F56BFA18E556E600EA7A0A /* UIKit.framework */; };
 		18F56C2018E556E700EA7A0A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18F56C1E18E556E700EA7A0A /* InfoPlist.strings */; };
 		18F56C2218E556E700EA7A0A /* formation_meshTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F56C2118E556E700EA7A0A /* formation_meshTests.m */; };
+		18F56C3018E5591200EA7A0A /* MeshViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F56C2F18E5591200EA7A0A /* MeshViewController.m */; };
+		18F56C3318E5595400EA7A0A /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F56C3218E5595400EA7A0A /* FileViewController.m */; };
+		18F56C3618E55D3300EA7A0A /* QSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F56C3518E55D3300EA7A0A /* QSplitViewController.m */; };
+		18F56C4118E55EFB00EA7A0A /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F56C4018E55EFB00EA7A0A /* MBProgressHUD.m */; };
+		18F56C4818E562C700EA7A0A /* diamond.obj in Resources */ = {isa = PBXBuildFile; fileRef = 18F56C4418E562C700EA7A0A /* diamond.obj */; };
+		18F56C4918E562C700EA7A0A /* bunny.obj in Resources */ = {isa = PBXBuildFile; fileRef = 18F56C4518E562C700EA7A0A /* bunny.obj */; };
+		18F56C4A18E562C700EA7A0A /* chair1.obj in Resources */ = {isa = PBXBuildFile; fileRef = 18F56C4618E562C700EA7A0A /* chair1.obj */; };
+		18F56C4B18E562C700EA7A0A /* face.obj in Resources */ = {isa = PBXBuildFile; fileRef = 18F56C4718E562C700EA7A0A /* face.obj */; };
+		18F56C4D18E5636F00EA7A0A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F56C4C18E5636F00EA7A0A /* OpenGLES.framework */; };
+		18F56C4F18E5637C00EA7A0A /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F56C4E18E5637C00EA7A0A /* GLKit.framework */; };
+		18F56C5118E5638C00EA7A0A /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F56C5018E5638C00EA7A0A /* CoreMotion.framework */; };
+		18F56C5718E568D000EA7A0A /* libMishMesh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F56C3C18E55E8800EA7A0A /* libMishMesh.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,9 +44,25 @@
 			remoteGlobalIDString = 18F56BF218E556E600EA7A0A;
 			remoteInfo = formation_mesh;
 		};
+		18F56C3B18E55E8800EA7A0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F56C3718E55E8800EA7A0A /* MishMesh.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 807B997B17CC819F004CF689;
+			remoteInfo = MishMesh;
+		};
+		18F56C5818E56A9A00EA7A0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18F56C3718E55E8800EA7A0A /* MishMesh.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 807B997A17CC819F004CF689;
+			remoteInfo = MishMesh;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1887C42418E9934000697EAB /* UIView+ZXQuartz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZXQuartz.h"; sourceTree = "<group>"; };
+		1887C42518E9934000697EAB /* UIView+ZXQuartz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZXQuartz.m"; sourceTree = "<group>"; };
 		18F56BF318E556E600EA7A0A /* formation_mesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = formation_mesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F56BF618E556E600EA7A0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18F56BF818E556E600EA7A0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +82,22 @@
 		18F56C1D18E556E700EA7A0A /* formation_meshTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "formation_meshTests-Info.plist"; sourceTree = "<group>"; };
 		18F56C1F18E556E700EA7A0A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		18F56C2118E556E700EA7A0A /* formation_meshTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = formation_meshTests.m; sourceTree = "<group>"; };
+		18F56C2E18E5591200EA7A0A /* MeshViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeshViewController.h; sourceTree = "<group>"; };
+		18F56C2F18E5591200EA7A0A /* MeshViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeshViewController.m; sourceTree = "<group>"; };
+		18F56C3118E5595400EA7A0A /* FileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileViewController.h; sourceTree = "<group>"; };
+		18F56C3218E5595400EA7A0A /* FileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileViewController.m; sourceTree = "<group>"; };
+		18F56C3418E55D3300EA7A0A /* QSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QSplitViewController.h; sourceTree = "<group>"; };
+		18F56C3518E55D3300EA7A0A /* QSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QSplitViewController.m; sourceTree = "<group>"; };
+		18F56C3718E55E8800EA7A0A /* MishMesh.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MishMesh.xcodeproj; path = formation_mesh/MishMesh/MishMesh.xcodeproj; sourceTree = "<group>"; };
+		18F56C3F18E55EFB00EA7A0A /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		18F56C4018E55EFB00EA7A0A /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		18F56C4418E562C700EA7A0A /* diamond.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = diamond.obj; sourceTree = "<group>"; };
+		18F56C4518E562C700EA7A0A /* bunny.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bunny.obj; sourceTree = "<group>"; };
+		18F56C4618E562C700EA7A0A /* chair1.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chair1.obj; sourceTree = "<group>"; };
+		18F56C4718E562C700EA7A0A /* face.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = face.obj; sourceTree = "<group>"; };
+		18F56C4C18E5636F00EA7A0A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		18F56C4E18E5637C00EA7A0A /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		18F56C5018E5638C00EA7A0A /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +105,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F56C5718E568D000EA7A0A /* libMishMesh.a in Frameworks */,
+				18F56C5118E5638C00EA7A0A /* CoreMotion.framework in Frameworks */,
+				18F56C4F18E5637C00EA7A0A /* GLKit.framework in Frameworks */,
+				18F56C4D18E5636F00EA7A0A /* OpenGLES.framework in Frameworks */,
 				18F56BF918E556E600EA7A0A /* CoreGraphics.framework in Frameworks */,
 				18F56BFB18E556E600EA7A0A /* UIKit.framework in Frameworks */,
 				18F56BF718E556E600EA7A0A /* Foundation.framework in Frameworks */,
@@ -82,6 +131,7 @@
 		18F56BEA18E556E600EA7A0A = {
 			isa = PBXGroup;
 			children = (
+				18F56C3718E55E8800EA7A0A /* MishMesh.xcodeproj */,
 				18F56BFC18E556E600EA7A0A /* formation_mesh */,
 				18F56C1B18E556E700EA7A0A /* formation_meshTests */,
 				18F56BF518E556E600EA7A0A /* Frameworks */,
@@ -101,6 +151,9 @@
 		18F56BF518E556E600EA7A0A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18F56C5018E5638C00EA7A0A /* CoreMotion.framework */,
+				18F56C4E18E5637C00EA7A0A /* GLKit.framework */,
+				18F56C4C18E5636F00EA7A0A /* OpenGLES.framework */,
 				18F56BF618E556E600EA7A0A /* Foundation.framework */,
 				18F56BF818E556E600EA7A0A /* CoreGraphics.framework */,
 				18F56BFA18E556E600EA7A0A /* UIKit.framework */,
@@ -112,9 +165,18 @@
 		18F56BFC18E556E600EA7A0A /* formation_mesh */ = {
 			isa = PBXGroup;
 			children = (
+				1887C42418E9934000697EAB /* UIView+ZXQuartz.h */,
+				1887C42518E9934000697EAB /* UIView+ZXQuartz.m */,
+				18F56C3E18E55EFB00EA7A0A /* HUD */,
 				18F56C0518E556E600EA7A0A /* AppDelegate.h */,
 				18F56C0618E556E600EA7A0A /* AppDelegate.m */,
 				18F56C0818E556E600EA7A0A /* Main.storyboard */,
+				18F56C3118E5595400EA7A0A /* FileViewController.h */,
+				18F56C3218E5595400EA7A0A /* FileViewController.m */,
+				18F56C2E18E5591200EA7A0A /* MeshViewController.h */,
+				18F56C2F18E5591200EA7A0A /* MeshViewController.m */,
+				18F56C3418E55D3300EA7A0A /* QSplitViewController.h */,
+				18F56C3518E55D3300EA7A0A /* QSplitViewController.m */,
 				18F56C0B18E556E600EA7A0A /* ViewController.h */,
 				18F56C0C18E556E600EA7A0A /* ViewController.m */,
 				18F56C0E18E556E600EA7A0A /* Images.xcassets */,
@@ -126,6 +188,10 @@
 		18F56BFD18E556E600EA7A0A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18F56C4418E562C700EA7A0A /* diamond.obj */,
+				18F56C4518E562C700EA7A0A /* bunny.obj */,
+				18F56C4618E562C700EA7A0A /* chair1.obj */,
+				18F56C4718E562C700EA7A0A /* face.obj */,
 				18F56BFE18E556E600EA7A0A /* formation_mesh-Info.plist */,
 				18F56BFF18E556E600EA7A0A /* InfoPlist.strings */,
 				18F56C0218E556E600EA7A0A /* main.m */,
@@ -152,6 +218,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		18F56C3818E55E8800EA7A0A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18F56C3C18E55E8800EA7A0A /* libMishMesh.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18F56C3E18E55EFB00EA7A0A /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				18F56C3F18E55EFB00EA7A0A /* MBProgressHUD.h */,
+				18F56C4018E55EFB00EA7A0A /* MBProgressHUD.m */,
+			);
+			path = HUD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,6 +249,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				18F56C5918E56A9A00EA7A0A /* PBXTargetDependency */,
 			);
 			name = formation_mesh;
 			productName = formation_mesh;
@@ -215,6 +299,12 @@
 			mainGroup = 18F56BEA18E556E600EA7A0A;
 			productRefGroup = 18F56BF418E556E600EA7A0A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 18F56C3818E55E8800EA7A0A /* Products */;
+					ProjectRef = 18F56C3718E55E8800EA7A0A /* MishMesh.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				18F56BF218E556E600EA7A0A /* formation_mesh */,
@@ -223,14 +313,28 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		18F56C3C18E55E8800EA7A0A /* libMishMesh.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMishMesh.a;
+			remoteRef = 18F56C3B18E55E8800EA7A0A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		18F56BF118E556E600EA7A0A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F56C4818E562C700EA7A0A /* diamond.obj in Resources */,
+				18F56C4918E562C700EA7A0A /* bunny.obj in Resources */,
+				18F56C4B18E562C700EA7A0A /* face.obj in Resources */,
 				18F56C0F18E556E600EA7A0A /* Images.xcassets in Resources */,
 				18F56C0118E556E600EA7A0A /* InfoPlist.strings in Resources */,
 				18F56C0A18E556E600EA7A0A /* Main.storyboard in Resources */,
+				18F56C4A18E562C700EA7A0A /* chair1.obj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,8 +354,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F56C0D18E556E600EA7A0A /* ViewController.m in Sources */,
+				1887C42618E9934000697EAB /* UIView+ZXQuartz.m in Sources */,
 				18F56C0718E556E600EA7A0A /* AppDelegate.m in Sources */,
+				18F56C3318E5595400EA7A0A /* FileViewController.m in Sources */,
+				18F56C3618E55D3300EA7A0A /* QSplitViewController.m in Sources */,
 				18F56C0318E556E600EA7A0A /* main.m in Sources */,
+				18F56C3018E5591200EA7A0A /* MeshViewController.m in Sources */,
+				18F56C4118E55EFB00EA7A0A /* MBProgressHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +379,11 @@
 			isa = PBXTargetDependency;
 			target = 18F56BF218E556E600EA7A0A /* formation_mesh */;
 			targetProxy = 18F56C1918E556E700EA7A0A /* PBXContainerItemProxy */;
+		};
+		18F56C5918E56A9A00EA7A0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MishMesh;
+			targetProxy = 18F56C5818E56A9A00EA7A0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -378,12 +492,15 @@
 		18F56C2618E556E700EA7A0A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "formation_mesh/formation_mesh-Prefix.pch";
 				INFOPLIST_FILE = "formation_mesh/formation_mesh-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -391,12 +508,15 @@
 		18F56C2718E556E700EA7A0A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "formation_mesh/formation_mesh-Prefix.pch";
 				INFOPLIST_FILE = "formation_mesh/formation_mesh-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -462,6 +582,7 @@
 				18F56C2718E556E700EA7A0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18F56C2818E556E700EA7A0A /* Build configuration list for PBXNativeTarget "formation_meshTests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +591,7 @@
 				18F56C2A18E556E700EA7A0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
