@@ -8,6 +8,9 @@ formation_mesh
 <li>界面选取任意控制点</li>
 <li>在基于点约束自由变形的作用下实现点云自由变形</li>
 </ol>
-  
+
+app截图  
+<img src="/formation_mesh/IMG_0248.PNG" alt="alt text" title="Title" />
+<img src="/formation_mesh/IMG_0250.PNG" alt="alt text" title="Title" />
 
 作者邮箱<lixiangflyin@163.com>
