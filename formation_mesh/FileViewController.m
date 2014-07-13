@@ -35,7 +35,7 @@
     
     self.meshViewController = (MeshViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
-    self.meshFiles = [NSMutableArray arrayWithObjects:@"chair1",@"face",@"diamond",@"bunny", nil];
+    self.meshFiles = [NSMutableArray arrayWithObjects:@"bunny_deformation",@"chair1",@"face",@"diamond",@"bunny", nil];
 }
 
 - (void)didReceiveMemoryWarning

@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "MBProgressHUD.h"
 #import "MishMesh/MSHRendererViewController.h"
+#import "CommandView.h"
 
-@interface MeshViewController :  MSHRendererViewController
+@interface MeshViewController :  MSHRendererViewController<CommandButtonDelegate>
 
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
  
@@ -19,6 +20,8 @@
 @property (strong, nonatomic) UILabel *locationLabel;
 
 @property (strong, nonatomic) UIImageView *controlImageView;
+
+@property (strong, nonatomic) CommandView *commandView;
 
 @property (strong,nonatomic) NSString *modelName;
 

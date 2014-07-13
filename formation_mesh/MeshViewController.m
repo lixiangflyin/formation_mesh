@@ -8,6 +8,7 @@
 
 #import "MeshViewController.h"
 #import "UIView+ZXQuartz.h"
+#import "JSONKit.h"
 
 @interface MeshViewController ()
 
@@ -17,6 +18,8 @@
 
 -(void)dealloc
 {
+    [_controlImageView release];
+    [_locationLabel release];
     [_HUD release];
     [super dealloc];
 }
@@ -47,6 +50,10 @@
     self.title = [NSString stringWithFormat:@"三维检测测试系统"];
     _isShowControlPoint = NO;
     
+    UIBarButtonItem *rightBtn = [[UIBarButtonItem alloc]initWithTitle:@"命令" style:UIBarButtonItemStylePlain target:self action:@selector(showCommandView)];
+    self.navigationItem.rightBarButtonItem = rightBtn;
+    [rightBtn release];
+    
     _locationLabel = [[UILabel alloc]init];
     [_locationLabel setTextColor:[UIColor blackColor]];
     [_locationLabel setTextAlignment:NSTextAlignmentLeft];
@@ -62,6 +69,70 @@
     [self loadModel:@"chair1"];
 }
 
+-(void)showCommandView
+{
+    NSLog(@"command!");
+    
+    if (_commandView == nil) {
+        _commandView = [[CommandView alloc]initWithDelegate:self];
+    }
+    
+    [self.view addSubview:_commandView];
+}
+
+#pragma -mark CommandButtonDelegate
+-(void)clickButtonValue:(int)btnNumber
+{
+    //发送请求
+    NSLog(@"you choose %d!",btnNumber);
+    
+    NSString *strUrl = [NSString stringWithFormat:@"http://121.21.2.1.php?%d",btnNumber];
+    
+    NSURL *url = [NSURL URLWithString:@"http://bbs.seu.edu.cn/api/hot/boards.json"];
+    NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10];
+    NSData *received = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
+    NSString *str = [[NSString alloc]initWithData:received encoding:NSUTF8StringEncoding];
+    NSDictionary *dic = [str objectFromJSONString];
+    NSLog(@"%@",dic);
+    
+    //下载文件
+    //[self loadFile:url];
+    
+}
+
+//通过地址下载ply文件
+- (void)loadFile:(NSURL *)urlToLoad
+{
+    _HUD = [[MBProgressHUD alloc] initWithView:self.view];
+	_HUD.labelText = @"正在下载解析...";
+    [self.view addSubview:_HUD];
+    [_HUD show:YES];
+    
+    //下载完成，拷贝到本地，前提消去之前拷贝文件
+    [NSURLConnection sendAsynchronousRequest:[[NSURLRequest alloc] initWithURL:urlToLoad]
+                                       queue:[[NSOperationQueue alloc] init]
+                           completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
+     {
+         //表示没有错误
+         NSAssert(!error && data, @"Error downloading!");
+         //取文件
+         NSArray *searchPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+         NSString *documentPath = [searchPaths objectAtIndex:0];
+         NSString *currentFile = [documentPath stringByAppendingPathComponent:@"current_model.obj"];
+         //文件处理，删除操作
+         NSFileManager *fm = [NSFileManager defaultManager];
+         //先删除旧版本
+         [fm removeItemAtPath:currentFile error:nil];
+         NSAssert([data writeToFile:currentFile atomically:YES], @"Couldn't write to the current_model file.");
+         dispatch_async(dispatch_get_main_queue(), ^
+                        {
+                            //super 将本地文件进行解析处理，解析过程是点解析，三角解析之后再显示出来
+                            [super loadFile:[NSURL fileURLWithPath:currentFile]];
+                        });
+     }];
+}
+
+//本地载入ply文件
 -(void)loadModel:(NSString *)model
 {
     //self.title = [NSString stringWithFormat:@"%@模型",_modelName];
@@ -77,6 +148,7 @@
     //NSArray *searchPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     //NSString *documentPath = [searchPaths objectAtIndex:0];
     //NSString *currentFile = [documentPath stringByAppendingPathComponent:@"4.obj"];
+    
     NSString *currentFile = [[NSBundle mainBundle] pathForResource:model ofType:@"obj"];
     dispatch_async(dispatch_get_main_queue(), ^
                    {

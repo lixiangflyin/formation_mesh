@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		1887C42618E9934000697EAB /* UIView+ZXQuartz.m in Sources */ = {isa = PBXBuildFile; fileRef = 1887C42518E9934000697EAB /* UIView+ZXQuartz.m */; };
+		1887C42918E9A4C100697EAB /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1887C42818E9A4C100697EAB /* InfoView.m */; };
+		18BA5B1118EB061A00674B2B /* bunny_deformation.obj in Resources */ = {isa = PBXBuildFile; fileRef = 18BA5B1018EB061A00674B2B /* bunny_deformation.obj */; };
+		18DFE1051941A1CF00EE2839 /* CommandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18DFE1041941A1CF00EE2839 /* CommandView.m */; };
+		18EDFE821942EF610058F229 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EDFE7A1942EF610058F229 /* GTMBase64.m */; };
+		18EDFE831942EF610058F229 /* Hmacsha1.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EDFE7D1942EF610058F229 /* Hmacsha1.m */; };
+		18EDFE841942EF610058F229 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EDFE7F1942EF610058F229 /* JSONKit.m */; };
+		18EDFE851942EF610058F229 /* WBUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EDFE811942EF610058F229 /* WBUtil.m */; };
 		18F56BF718E556E600EA7A0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F56BF618E556E600EA7A0A /* Foundation.framework */; };
 		18F56BF918E556E600EA7A0A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F56BF818E556E600EA7A0A /* CoreGraphics.framework */; };
 		18F56BFB18E556E600EA7A0A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F56BFA18E556E600EA7A0A /* UIKit.framework */; };
@@ -63,6 +70,20 @@
 /* Begin PBXFileReference section */
 		1887C42418E9934000697EAB /* UIView+ZXQuartz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZXQuartz.h"; sourceTree = "<group>"; };
 		1887C42518E9934000697EAB /* UIView+ZXQuartz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZXQuartz.m"; sourceTree = "<group>"; };
+		1887C42718E9A4C100697EAB /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoView.h; sourceTree = "<group>"; };
+		1887C42818E9A4C100697EAB /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoView.m; sourceTree = "<group>"; };
+		18BA5B1018EB061A00674B2B /* bunny_deformation.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bunny_deformation.obj; sourceTree = "<group>"; };
+		18DFE1031941A1CF00EE2839 /* CommandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommandView.h; sourceTree = "<group>"; };
+		18DFE1041941A1CF00EE2839 /* CommandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommandView.m; sourceTree = "<group>"; };
+		18EDFE791942EF610058F229 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		18EDFE7A1942EF610058F229 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		18EDFE7B1942EF610058F229 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		18EDFE7C1942EF610058F229 /* Hmacsha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hmacsha1.h; sourceTree = "<group>"; };
+		18EDFE7D1942EF610058F229 /* Hmacsha1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hmacsha1.m; sourceTree = "<group>"; };
+		18EDFE7E1942EF610058F229 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		18EDFE7F1942EF610058F229 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		18EDFE801942EF610058F229 /* WBUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUtil.h; sourceTree = "<group>"; };
+		18EDFE811942EF610058F229 /* WBUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUtil.m; sourceTree = "<group>"; };
 		18F56BF318E556E600EA7A0A /* formation_mesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = formation_mesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18F56BF618E556E600EA7A0A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		18F56BF818E556E600EA7A0A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -128,6 +149,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18EDFE781942EF610058F229 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				18EDFE791942EF610058F229 /* GTMBase64.h */,
+				18EDFE7A1942EF610058F229 /* GTMBase64.m */,
+				18EDFE7B1942EF610058F229 /* GTMDefines.h */,
+				18EDFE7C1942EF610058F229 /* Hmacsha1.h */,
+				18EDFE7D1942EF610058F229 /* Hmacsha1.m */,
+				18EDFE7E1942EF610058F229 /* JSONKit.h */,
+				18EDFE7F1942EF610058F229 /* JSONKit.m */,
+				18EDFE801942EF610058F229 /* WBUtil.h */,
+				18EDFE811942EF610058F229 /* WBUtil.m */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		18F56BEA18E556E600EA7A0A = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +202,7 @@
 		18F56BFC18E556E600EA7A0A /* formation_mesh */ = {
 			isa = PBXGroup;
 			children = (
+				18EDFE781942EF610058F229 /* JSON */,
 				1887C42418E9934000697EAB /* UIView+ZXQuartz.h */,
 				1887C42518E9934000697EAB /* UIView+ZXQuartz.m */,
 				18F56C3E18E55EFB00EA7A0A /* HUD */,
@@ -175,6 +213,10 @@
 				18F56C3218E5595400EA7A0A /* FileViewController.m */,
 				18F56C2E18E5591200EA7A0A /* MeshViewController.h */,
 				18F56C2F18E5591200EA7A0A /* MeshViewController.m */,
+				1887C42718E9A4C100697EAB /* InfoView.h */,
+				1887C42818E9A4C100697EAB /* InfoView.m */,
+				18DFE1031941A1CF00EE2839 /* CommandView.h */,
+				18DFE1041941A1CF00EE2839 /* CommandView.m */,
 				18F56C3418E55D3300EA7A0A /* QSplitViewController.h */,
 				18F56C3518E55D3300EA7A0A /* QSplitViewController.m */,
 				18F56C0B18E556E600EA7A0A /* ViewController.h */,
@@ -188,6 +230,7 @@
 		18F56BFD18E556E600EA7A0A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				18BA5B1018EB061A00674B2B /* bunny_deformation.obj */,
 				18F56C4418E562C700EA7A0A /* diamond.obj */,
 				18F56C4518E562C700EA7A0A /* bunny.obj */,
 				18F56C4618E562C700EA7A0A /* chair1.obj */,
@@ -329,6 +372,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18F56C4818E562C700EA7A0A /* diamond.obj in Resources */,
+				18BA5B1118EB061A00674B2B /* bunny_deformation.obj in Resources */,
 				18F56C4918E562C700EA7A0A /* bunny.obj in Resources */,
 				18F56C4B18E562C700EA7A0A /* face.obj in Resources */,
 				18F56C0F18E556E600EA7A0A /* Images.xcassets in Resources */,
@@ -355,12 +399,18 @@
 			files = (
 				18F56C0D18E556E600EA7A0A /* ViewController.m in Sources */,
 				1887C42618E9934000697EAB /* UIView+ZXQuartz.m in Sources */,
+				18EDFE821942EF610058F229 /* GTMBase64.m in Sources */,
+				18EDFE831942EF610058F229 /* Hmacsha1.m in Sources */,
+				18EDFE851942EF610058F229 /* WBUtil.m in Sources */,
+				18DFE1051941A1CF00EE2839 /* CommandView.m in Sources */,
 				18F56C0718E556E600EA7A0A /* AppDelegate.m in Sources */,
+				18EDFE841942EF610058F229 /* JSONKit.m in Sources */,
 				18F56C3318E5595400EA7A0A /* FileViewController.m in Sources */,
 				18F56C3618E55D3300EA7A0A /* QSplitViewController.m in Sources */,
 				18F56C0318E556E600EA7A0A /* main.m in Sources */,
 				18F56C3018E5591200EA7A0A /* MeshViewController.m in Sources */,
 				18F56C4118E55EFB00EA7A0A /* MBProgressHUD.m in Sources */,
+				1887C42918E9A4C100697EAB /* InfoView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +499,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -483,6 +533,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
